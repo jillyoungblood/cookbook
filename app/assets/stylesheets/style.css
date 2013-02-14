@@ -1,0 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Leckerli+One);
+
+h1
+{
+  font-family: 'Leckerli One', cursive;
+  font-weight: bold;
+  color: #025928;
+}
+
+
+div
+ {
+  background-color: #F2CCB6
+  font-family: 'Leckerli One', cursive;
+ }
+

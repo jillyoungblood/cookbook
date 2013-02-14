@@ -1,0 +1,28 @@
+<ul>
+  <li><%= link_to @ingredient.name, @ingredient %></li>
+  <li><%= @ingredient.measurement %></li>
+  <li><%= @ingredient.cost %></li>
+  <li><%= @recipe.book_id %></li>
+  <li><%= image_tag(@recipe.image) %></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+<% @recipe.ingredients.each do |ingredient| %>
+  <ul>
+    <li><%= link_to ingredient.name, ingredient %></li>
+    <li><%= ingredient.measurement %></li>
+    <li><%= ingredient.cost %></li>
+    <li><%= image_tag(ingredient.image) %></li>
+  </ul>
+<% end %>
+
+<%= link_to 'Delete', @recipe, :method => :delete %>
+<%= link_to 'Edit', edit_recipe_path(@recipe) %>

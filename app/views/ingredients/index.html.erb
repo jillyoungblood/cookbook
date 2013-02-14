@@ -1,0 +1,14 @@
+<li><%= link_to('New Ingredient', new_ingredient_path) %></li>
+
+<ol>
+  <% @ingredients.each do |ingredient| %>
+  <li>
+    <ul>
+      <li><%= link_to(ingredient.name, ingredient) %></li>
+      <li><%= ingredient.measurement %></li>
+      <li><%= ingredient.cost %></li>
+      <li><%= image_tag(ingredient.image) %></li>
+    </ul>
+  </li>
+    <% end %>
+</ol>
